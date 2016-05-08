@@ -17,44 +17,31 @@ public class Trie {
 		
 		List<TrieNode> list = n.getChildren();
 		
-		if (list == null) {
-			list = new LinkedList<TrieNode>();
-			n.setChildren(list);
-			TrieNode cur = new TrieNode();
-			cur.setValue(first);
-			cur.setParent(n);
-			list.add(cur);
-			if (s.length() == 1) {
-				cur.setEndOfWorld(true);
-				return;
-			} else {
-				add(cur, s.substring(1));
-			}
-			
-		}
-		
-		boolean found = false;
-		for (TrieNode cn: list) {
-			if (first == cn.getValue()) {
-				if (s.length() > 1) {
-					found = true;
-					add(cn, s.substring(1));					
-					break;
-				} else {
-					cn.setEndOfWorld(true);
+		if (list != null) {
+			for (TrieNode cn: list) {
+				if (first == cn.getValue()) {
+					processNode(cn, s);					
+					return;
 				}
-			}
-		}
+			}	
+		} else {
+			list = new LinkedList<TrieNode>();
+		}		
 		
-		// when char not found in child
-		if (!found) {
-			if (s.length() > 1) {
-				TrieNode cur = new TrieNode();
-				cur.setValue(first);
-				cur.setParent(n);
-				list.add(cur);
-				add(cur, s.substring(1));
-			}
+		n.setChildren(list);
+		TrieNode cur = new TrieNode();
+		cur.setValue(first);
+		cur.setParent(n);
+		list.add(cur);
+
+		processNode(cur, s);
+	}
+	
+	private void processNode(TrieNode n, String s) {
+		if (s.length() > 1) {
+			add(n, s.substring(1));					
+		} else {
+			n.setEndOfWorld(true);
 		}
 	}
 	
