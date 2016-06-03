@@ -1,9 +1,9 @@
-package per.ds.exercise;
+package per.exercise.string;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Q1_2 {
+public class ReverseTest {
 
 	@Test
 	public void testReverse() {

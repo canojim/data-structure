@@ -1,4 +1,4 @@
-package per.ds.exercise;
+package per.exercise.string;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,7 +6,7 @@ import java.util.Set;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Q1_1 {
+public class UniqueTest {
 
 	// Check uniqueness
 	

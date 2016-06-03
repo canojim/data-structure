@@ -1,11 +1,11 @@
-package per.ds.exercise;
+package per.exercise.string;
 
 import java.util.Arrays;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Q1_3 {
+public class PermutationTest {
 	
 	@Test
 	public void testPermutation() {

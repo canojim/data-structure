@@ -1,9 +1,9 @@
-package per.ds.exercise;
+package per.exercise.math;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BitManipulation {
+public class BitManipulationTest {
 	
 	@Test
 	public void testBitManipulation() {

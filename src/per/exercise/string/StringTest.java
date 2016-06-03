@@ -1,4 +1,4 @@
-package per.ds.exercise;
+package per.exercise.string;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

@@ -1,4 +1,4 @@
-package per.ds.map;
+package per.exrecise.ds;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

@@ -1,9 +1,9 @@
-package per.ds.exercise;
+package per.exercise.math;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Prime {
+public class PrimeTest {
 	
 	@Test
 	public void testIsPrime() {
