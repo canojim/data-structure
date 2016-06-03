@@ -1,4 +1,4 @@
-package per.exrecise.ds;
+package per.exercise.ds;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
